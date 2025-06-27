@@ -1,4 +1,3 @@
-// 여기에 너의 시트 CSV 링크 붙여넣기!
 const sheetUrl = "https://docs.google.com/spreadsheets/d/1jTOurtDad_WpwH7bXLqxPcxRvgN-0bhzqMRajfqD9Zw/export?format=csv";
 
 fetch(sheetUrl)
@@ -8,7 +7,6 @@ fetch(sheetUrl)
 
     const lastRow = rows[rows.length - 1];
 
-    // 뒤에서부터 0이 아닌 값 찾기
     let finalValue = "0이 아닌 값 없음";
     for (let i = lastRow.length - 1; i >= 0; i--) {
       const cell = lastRow[i].trim();
